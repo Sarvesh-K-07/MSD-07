@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FoodShare - Food Wastage Management</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}body{background:#f7f9f5;color:#333}header{background:#1b5e20;color:white;padding:18px 8%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}header h1{font-size:26px}nav a{color:white;text-decoration:none;margin-left:20px}.hero{text-align:center;padding:100px 20px;background:linear-gradient(120deg,#e8f5e9,#c8e6c9)}.hero h2{font-size:42px;color:#1b5e20;margin-bottom:20px}.hero p{font-size:18px;margin-bottom:25px}.btn{display:inline-block;background:#2e7d32;color:white;padding:12px 24px;border:none;border-radius:6px;text-decoration:none;cursor:pointer}section{padding:60px 8%}section h2{text-align:center;color:#1b5e20;margin-bottom:30px;font-size:30px}.cards{display:flex;gap:25px;flex-wrap:wrap;justify-content:center}.card{background:white;padding:25px;border-radius:12px;width:280px;box-shadow:0 4px 12px #00000012;text-align:center}.card h3{color:#2e7d32;margin-bottom:12px}.card p{margin-bottom:10px;line-height:1.6}.donate{background:#e8f5e9}form{max-width:500px;margin:auto;background:white;padding:25px;border-radius:12px;box-shadow:0 4px 12px #00000012}input,textarea,select{width:100%;padding:12px;margin:10px 0;border:1px solid #ccc;border-radius:6px}footer{background:#1b5e20;color:white;text-align:center;padding:20px}@media(max-width:600px){header{flex-direction:column;gap:15px}nav a{margin:8px}.hero h2{font-size:30px}}
+</style>
+</head>
+<body>
+<header><h1>🍃 FoodShare</h1><nav><a href="#home">Home</a><a href="#about">About</a><a href="#food">Available Food</a><a href="#donate">Donate</a></nav></header>
+<div class="hero" id="home"><h2>Save Food, Feed People</h2><p>Reduce food waste and help people in need through food sharing.</p><a href="#donate" class="btn">Donate Food</a></div>
+<section id="about"><h2>About Our Website</h2><p style="text-align:center;max-width:800px;margin:auto;line-height:1.8">FoodShare is a food wastage management platform that connects food donors with people and organizations in need. Our goal is to reduce food waste, promote food donation, and build a hunger-free community.</p></section>
+<section id="food"><h2>Available Food</h2><div class="cards"><div class="card"><h3>🍚 Cooked Rice</h3><p>Quantity: 20 Meals</p><p>Location: Ambur</p><p>Status: Available</p></div><div class="card"><h3>🥘 Vegetable Meals</h3><p>Quantity: 15 Meals</p><p>Location: Vellore</p><p>Status: Available</p></div><div class="card"><h3>🍞 Bakery Items</h3><p>Quantity: 30 Items</p><p>Location: Tirupattur</p><p>Status: Available</p></div></div></section>
+<section class="donate" id="donate"><h2>Donate Food</h2><form id="donationForm"><input type="text" placeholder="Donor Name" required><input type="text" placeholder="Food Name" required><input type="number" placeholder="Quantity" required><input type="text" placeholder="Location" required><input type="tel" placeholder="Contact Number" required><textarea placeholder="Food description" rows="4"></textarea><button type="submit" class="btn">Submit Donation</button></form></section>
+<section id="contact"><h2>Contact Us</h2><p style="text-align:center">Email: foodshare@example.com<br><br>Together, let's reduce food waste and make a difference!</p></section>
+<footer><p>© 2026 FoodShare | Food Wastage Management Website</p></footer>
+<script>document.getElementById('donationForm').addEventListener('submit',function(event){event.preventDefault();alert('Thank you! Your donation details have been submitted.');this.reset();});</script>
+</body></html>
